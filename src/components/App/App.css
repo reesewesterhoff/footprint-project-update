@@ -1,0 +1,112 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+}
+
+.alert {
+    background-color: #ff4545;
+    margin: 50px;
+}
+
+/* form {
+    background-color: #dbd5d5;
+    width: 30%;
+    height: 250px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 2px;
+} */
+
+input {
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.log-in, .log-out, .register {
+  background-color: #00acb0;
+  border-radius: 4px;
+  color: #f8f8f8;
+  min-height: 50px;
+  min-width: 100px;
+  outline:0;
+  cursor: pointer;
+}
+
+.log-in:hover, .log-out:hover, .register:hover {
+  background-color: #008183;
+}
+
+/* This line makes the "Register" and "Login" buttons look like links */
+.link-button {
+    background:none;
+    color:inherit;
+    border:none;
+    padding:0;
+    font: inherit;
+    outline:0;
+    border-bottom:1px solid #444; 
+    cursor: pointer;
+}
+
+.heading {
+   text-align: center;
+   margin: 40px;
+   color: darkslategray;
+}
+
+.subHeading {
+    text-align: center;
+    color: rgb(139, 141, 141);
+    width: 70%;
+    margin: auto;
+}
+
+.siteDescription {
+    line-height: 0.75;
+    font-size: 14px;
+}
+
+.toolTip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.toolTip .toolTipText {
+    visibility: hidden;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 25%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.toolTip .toolTipText::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.toolTip:hover .toolTipText {
+    visibility: visible;
+    opacity: .8;
+}
+
+.center {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}

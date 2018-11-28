@@ -1,0 +1,18 @@
+footer {
+    /* position: fixed; */
+    right: 30px;
+    height: 7vmin;   /* Height of the footer */
+    text-align: right;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top:10vmin;
+    padding-bottom: 1vmin;
+}
+
+#contact {
+    padding-right: 5vmin;
+    padding-bottom: 3vmin;
+}
