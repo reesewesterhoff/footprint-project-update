@@ -19,7 +19,8 @@ if (process.env.DATABASE_URL) {
   config = {
     user: auth[0],
     password: auth[1],
-    host: params.hostname,
+    host: 
+    'ec2-54-197-249-140.compute-1.amazonaws.com',
     port: params.port,
     database: params.pathname.split('/')[1],
     ssl: true, // heroku requires ssl to be true
