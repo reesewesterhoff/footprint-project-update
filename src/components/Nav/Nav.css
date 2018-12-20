@@ -8,13 +8,13 @@
 
 .nav {
   overflow: hidden;
-  background-image: linear-gradient(rgb(170, 197, 255), rgb(255, 255, 255));
+  background-color: #50C878;
 }
 
 .nav-link {
   float: left;
   color: darkslategray;
-  background-image: linear-gradient(rgb(170, 197, 255), rgb(255, 255, 255));
+  background-color: #50C878;
   text-align: center;
   padding: 24px 10px;
   text-decoration: none;
