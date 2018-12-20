@@ -17,6 +17,8 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Switch from '@material-ui/core/Switch';
 // snackbar for when generator is selected/energy budget added
 import Snackbar from '@material-ui/core/Snackbar';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
 
 // jss styles
 const styles = {
@@ -83,17 +85,24 @@ class GeneratorForm extends Component {
         return (
             <div>
                 <div>
-                    <InputLabel htmlFor={this.state.hasGenerator.toString()}>Do you currently have a generator?  </InputLabel>
+                    <InputLabel 
+                        htmlFor={this.state.hasGenerator.toString()} 
+                        style={{marginRight: '4vmin'}}
+                    >
+                        Do you currently have a generator?  
+                    </InputLabel>
                     <FormControlLabel
                         control={
-                            <Switch
-                                checked={this.state.hasGenerator}
+                            <RadioGroup
+                                style={{display: 'flex', flexDirection: 'row'}}
+                                className={classes.group}
+                                value={this.state.hasGenerator}
                                 onChange={this.handleHasGeneratorToggle}
-                                value="hasGenerator"
-                                color="primary"
-                            />
+                            >
+                            <FormControlLabel value={true} control={<Radio />} label="Yes" />
+                            <FormControlLabel value={false} control={<Radio />} label="No" />
+                            </RadioGroup>
                         }
-                        label={this.state.hasGenerator ? "Yes" : "No"}
                     />
 
                 </div>
