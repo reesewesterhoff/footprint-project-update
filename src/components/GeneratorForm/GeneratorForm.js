@@ -104,7 +104,9 @@ class GeneratorForm extends Component {
                             </RadioGroup>
                         }
                     />
-
+                    <h4>
+                        If you don't have an existing generator enter your estimated monthly energy budget.  If you do have a generator(s) select 'Yes' and enter your generator specific information.
+                    </h4>
                 </div>
                 <br />
                 {this.state.hasGenerator && (
