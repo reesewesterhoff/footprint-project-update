@@ -8,7 +8,7 @@ const router = express.Router();
  * GET route template
  */
 router.get('/:category', (req, res) => {
-    console.log('req.params.category', req.params.category);
+    console.log('req.params.category category', req.params.category);
     
     pool.query(`SELECT * FROM "site_type" WHERE "category"=$1;`, [req.params.category])
     .then(results => {
@@ -23,7 +23,7 @@ router.get('/:category', (req, res) => {
  * GET route template
  */
 router.get('/', (req, res) => {
-    console.log('req.params.category', req.params.category);
+    console.log('req.params.catedsfdsfsdfgory', req.params.category);
     
     pool.query(`SELECT * FROM "site_type";`)
     .then(results => {
